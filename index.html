@@ -9,30 +9,24 @@
 </head>
 <body>
 <div id="desktop">
-
-    <div id="main-content">
-        <div id='storydiv' style='display:block;'>
-            <div></div>
-        </div>
-
-        <div style="width:100%;margin:0 auto;">
-            <canvas id="canvas" style="margin-top:0;width:100%;height:100vh;display:block;" width="400" height="400">It appears that your browser doesn't support the canvas element.</canvas>
-        </div>
-
-        <div id='scorediv' style='display:none;'>
-            <h1>High Scores</h1>
-            <button id='hide' onClick='JavaScript:scorelistHide();'>Close</button>
-            <table id='scoretable'>
-                <thead><tr><th>Player</th><th>Level</th><th>Score</th><th>Date</th></tr></thead>
-                <tbody></tbody>
-            </table>
-        </div>
-    </div>
+<div id="main-content">
+<div id='storydiv' style='display:block;'>
+<div></div>
 </div>
-
-<!-- keep a hidden pause control so existing JS can reference it safely -->
+<div style="width:100%;margin:0 auto;">
+<canvas id="canvas" style="margin-top:0;width:100%;height:100vh;display:block;" width="400" height="400">It appears that your browser doesn't support the canvas element.</canvas>
+</div>
+<div id='scorediv' style='display:none;'>
+<h1>High Scores</h1>
+<button id='hide' onClick='JavaScript:scorelistHide();'>Close</button>
+<table id='scoretable'>
+<thead><tr><th>Player</th><th>Level</th><th>Score</th><th>Date</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
 <a id="pauseHref" style="display:none;" href="javascript:void(0);">Pause Game</a>
-
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="howler.js"></script>
 <script type="text/javascript" src="game.js"></script>
